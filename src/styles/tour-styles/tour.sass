@@ -1,0 +1,101 @@
+
+// Colors:
+
+$orange: #FF6A3A
+$blue: #75B9BE
+$black: #1E1E1E
+$white: #D9D9D9
+
+// Margins
+$mob8: clamp(4px,1.86912vw,16px)
+$mob16: clamp(8px,3.73824vw,32px)
+$mob32: clamp(16px,7.47648vw,64px)
+$mob64: clamp(32px,14.95296vw,128px)
+$mob128: clamp(64px,29.90592vw,256px)
+
+$pc8: clamp(4px,0.41664vw,16px)
+$pc16: clamp(8px,0.83328vw,32px)
+$pc32: clamp(16px,1.66656vw,64px)
+$pc64: clamp(32px,3.33312vw,128px)
+$pc128: clamp(64px,6.66624vw,256px)
+$pc256: clamp(128px,13.33248vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
+
+// Font sizes mobile:
+$fontmob16: clamp(8px,3.73824vw,32px)
+$fontmob17: clamp(8.5px,3.9718799999999996vw,34px)
+$fontmob18: clamp(9px,4.20552vw,36px)
+$fontmob21: clamp(10.5px,4.90644vw,42px)
+$fontmob23: clamp(11.5px,5.37372vw,46px)
+$fontmob24: clamp(12px,5.60736vw,48px)
+$fontmob28: clamp(14px,6.541919999999999vw,56px)
+$fontmob32: clamp(16px,1.66656vw,64px)
+
+// Font sizes PC:
+$font19: clamp(9.5px,0.9895200000000001vw,38px)
+$font21: clamp(10.5px,1.09368vw,42px)
+$font24: clamp(12px,1.24992vw,48px)
+$font25: clamp(12.5px,1.302vw,50px)
+$font40: clamp(20px,2.0832vw,80px)
+$font48: clamp(24px,2.49984vw,96px)
+$font64: clamp(32px,3.33312vw,128px)
+
+*
+    body
+
+        .container
+            width: 89.74358974358974%
+            height: auto
+            display: flex
+            margin: auto
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-top: $mob64
+
+            .tour-content
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+
+                .tour-heading
+                    color: $orange
+
+                .rooms
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+
+                    .line
+                        width: $mob16
+                        height: clamp(130px,60.746399999999994vw,520px)
+                        background-color: $blue
+                        border-radius: 100px
+                        margin-top: $mob32
+
+                    .room-description
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        text-align: center
+
+                        .room-name
+                            margin-top: $mob32
+                            color: $black
+
+                        .room-paragraph
+                            width: clamp(157.5px,73.5966vw,630px)
+                            font-size: $fontmob17
+                            margin-top: $mob16
+
+                        .room
+                            width: clamp(175px,81.774vw,700px)
+                            height: clamp(175px,81.774vw,700px)
+                            margin-top: clamp(10px,4.6728vw,40px)
