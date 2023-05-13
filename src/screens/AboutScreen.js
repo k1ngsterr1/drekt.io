@@ -33,19 +33,39 @@ const AboutScreen = () => {
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
+                style={{
+                  "--swiper-pagination-color": "#FF6A3A",
+                  "--swiper-navigation-color": "#75B9BE",
+                }}
               >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-model">
+                    <img className="model" src={model}></img>
+                    <h4 className="model-heading">Backend</h4>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-model">
+                    <img className="model" src={model}></img>
+                    <h4 className="model-heading">Frontend</h4>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-model">
+                    <img className="model" src={model}></img>
+                    <h4 className="model-heading">Mobile</h4>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="swiper-model">
+                    <img className="model" src={model}></img>
+                    <h4 className="model-heading">UI/UX</h4>
+                  </div>
+                </SwiperSlide>
               </Swiper>
             </div>
           </div>
+          <div className="specific-cases"></div>
         </div>
       </div>
     </div>
