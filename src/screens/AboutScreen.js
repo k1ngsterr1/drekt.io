@@ -7,8 +7,29 @@ import { Pagination, Navigation } from "swiper";
 
 // Assets
 import model from "../assets/orange.png";
+import icon from "../assets/icon.svg";
 
 const AboutScreen = () => {
+  function Card(props) {
+    return (
+      <div className="card-container">
+        <h5 className="card-heading">{props.heading}</h5>
+        <img className="card-icon" src={icon}></img>
+        <p className="card-paragraph">{props.paragraph}</p>
+      </div>
+    );
+  }
+
+  function NextCard(props) {
+    return (
+      <div className="card-container-next">
+        <h5 className="card-heading">{props.heading}</h5>
+        <img className="card-icon" src={icon}></img>
+        <p className="card-paragraph">{props.paragraph}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="about-screen">
       <div className="container">
@@ -65,7 +86,25 @@ const AboutScreen = () => {
               </Swiper>
             </div>
           </div>
-          <div className="specific-cases"></div>
+          <div className="specific-cases">
+            <h3 className="specific-cases-heading">For specific cases</h3>
+            <Card
+              heading="Microservices"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, felis vel interdum porttitor, enim leo"
+            ></Card>
+            <NextCard
+              heading="Microservices"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, felis vel interdum porttitor, enim leo"
+            ></NextCard>
+            <NextCard
+              heading="Microservices"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, felis vel interdum porttitor, enim leo"
+            ></NextCard>
+            <NextCard
+              heading="Microservices"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum, felis vel interdum porttitor, enim leo"
+            ></NextCard>
+          </div>
         </div>
       </div>
     </div>
